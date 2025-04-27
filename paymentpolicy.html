@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lofty</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+        <link href="css/flexslider.css" rel="stylesheet" />
+        <link href="css/main-style.css" rel="stylesheet" />
+        <style>
+           .body {
+                font-family: sans-serif;
+                line-height: 1.6;
+                margin-top: 20rem;
+                margin-left: 2rem;
+                padding: 0 10rem;
+               
+            }
+            h1, h2, h3 {
+                color: #333;
+                padding: 2rem;
+                font-weight: 600;
+            }
+            p {
+                margin-bottom: 1em;
+                line-height: 3rem;
+                padding: 1rem;
+            }
+            strong {
+                font-weight: bold;
+            }
+            ul {
+                list-style-type: disc;
+                margin-left: 20px;
+                margin-bottom: 1em;
+            }
+            li {
+                margin-bottom: 0.5em;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .contact-info {
+                margin-top: 2em;
+                border-top: 1px solid #eee;
+                padding-top: 1em;
+            }
+        </style>
+      </head>
+      <body class="tm-gray-bg">
+        <div class="tm-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+                <a href="#" class="tm-site-name"
+                  ><img src="img/loftylogo.png" class="logo"
+                ></a>
+              </div>
+              <div class="col-lg-6 col-md-8 col-sm-9">
+                <div class="mobile-menu-icon">
+                  <i class="fa fa-bars"></i>
+                </div>
+                <nav class="tm-nav">
+                  <ul>
+                    <li>
+                      <a href="index.html" class="active"
+                        ><i class="fa-solid fa-house-user"></i> Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="about.html"
+                        ><i class="fa-solid fa-user"></i> About Lofty</a
+                      >
+                    </li>
+                    <li>   
+                      <a href="campus.html">
+                        <i class="fa-solid fa-file-invoice"></i> Shop  
+                      </a>
+                      
+                    </li>
+                    
+                   
+                    <li>
+                      <a href="contact.html"
+                        ><i class="fa-solid fa-headset"></i> Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a href="cart.html"
+                        ><i class="fa-solid fa-cart-shopping"></i>Cart<div class="cart-quantity">0</div></a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                
+              </div>
+              
+    
+            </div>
+            <section class="search-bar-section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <form action="#" class="search-form">
+                      <div class="input-group">
+                        <input type="search" class="form-control" id="productSearchInput" placeholder="Search for products, brands, and more..." autocomplete="off">  
+                        <span class="input-group-btn">
+                          <button class="btn btn-warning" type="submit" id="searchButton">
+                            <i class="fa fa-search"></i> Search
+                          </button>
+                        </span>
+                      </div>
+                       
+                      <div id="searchResults" class="search-results-container"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+    
+</head>
+<body>
+<div class="body">
+    <h1>Payment Policy for Lofty</h1>
+
+    <p>This Payment Policy outlines the accepted methods of payment and the terms and conditions related to purchases made on our website, <a href="index.html">Lofty</a>. By placing an order on our Website, you agree to the terms of this Payment Policy.</p>
+
+    <h2>1. Accepted Payment Methods:</h2>
+    <p>We currently accept the following methods of payment:</p>
+    <ul>
+        <li><strong>Credit and Debit Cards:</strong> We accept major credit and debit cards, including:
+            <ul>
+                <li>Visa</li>
+                <li>MasterCard</li>
+                <li>American Express</li>
+                <li>Airtel and Mtn mobile money</li>
+                <li> Paypal</li>
+            </ul>
+            <p>All card payments are processed through secure third-party payment gateways that encrypt your card details to ensure your security. We do not directly store your full credit/debit card information on our servers.</p>
+        </li>
+        <li><strong>Mobile Money:</strong> For customers in Uganda, we accept payments via the following mobile money platforms:
+            <ul>
+                <li>MTN Mobile Money</li>
+                <li>Airtel Money</li>
+            </ul>
+            <p>You will be redirected to the respective mobile money platform to complete your transaction. Standard mobile money transaction fees may apply as per your mobile network provider.</p>
+        </li>
+        <li><strong>Bank Transfers (Direct Bank Deposit/EFT):</strong>  
+            <p>We accept direct bank transfers to our designated bank account. Please note that orders paid via bank transfer will only be processed once the funds have been cleared in our account. You will receive our bank account details during the checkout process and via email confirmation. Please include your order number as the payment reference.</p>
+        </li>
+        <li><strong>Other Payment Methods:</strong>  Include if you offer other methods like PayPal, stripe,etc. 
+        </li>
+    </ul>
+
+    <h2>2. Payment Processing:</h2>
+    <ul>
+        <li>Payment will be processed at the time of order placement or shortly thereafter, depending on the payment method chosen.</li>
+        <li>For credit/debit card payments, your card will be authorized, and the total order amount will be held. The actual charge will be processed upon shipment of your order.</li>
+        <li>For mobile money payments, you will be prompted to authorize the payment through your mobile money account during checkout.</li>
+        <li>For bank transfers, you are responsible for initiating the transfer. We will send you a confirmation email once we have received and cleared your payment. Processing times for bank transfers may vary.</li>
+    </ul>
+
+    <h2>3. Currency:</h2>
+    <p>All transactions on our Website are processed in <strong>Ugandan Shillings (UGX)</strong> unless otherwise explicitly stated during the checkout process. If you are paying with a card or payment method denominated in a different currency, your payment provider will perform the currency conversion at their applicable exchange rate, which may include fees. We are not responsible for any currency conversion fees charged by your bank or payment provider.</p>
+
+    <h2>4. Pricing and Errors:</h2>
+    <ul>
+        <li>All prices displayed on our Website are inclusive of applicable taxes (e.g., VAT) unless otherwise stated.</li>
+        <li>We strive to ensure the accuracy of pricing information. However, in the event of a pricing error, we reserve the right to refuse or cancel any orders placed at the incorrect price, even if the order has been confirmed and your payment has been processed. In such cases, we will notify you as soon as possible and offer you the option to reconfirm your order at the correct price or receive a full refund.</li>
+    </ul>
+
+    <h2>5. Payment Security:</h2>
+    <ul>
+        <li>We take the security of your payment information seriously. Our Website utilizes Secure Socket Layer (SSL) encryption technology to protect your personal and payment details during transmission.</li>
+        <li>For credit/debit card payments, we partner with reputable and PCI DSS compliant third-party payment processors to ensure your data is handled securely.</li>
+    </ul>
+
+    <h2>6. Order Confirmation:</h2>
+    <p>Once your payment has been successfully processed, you will receive an order confirmation email containing details of your purchase. Please ensure that the email address you provide during checkout is accurate.</p>
+
+    <h2>7. Payment Issues:</h2>
+    <ul>
+        <li>If your payment fails or is declined, you will be notified during the checkout process. Please double-check your payment details, ensure sufficient funds are available, and try again. You may also need to contact your bank or payment provider for assistance.</li>
+        <li>We reserve the right to cancel your order if payment is not successfully processed within a reasonable timeframe.</li>
+    </ul>
+
+    <h2>8. Refunds:</h2>
+    <p>Our refund policy is outlined in our <a href="cancellation.html">Refund/Returns Policy</a>. Refunds will typically be processed back to the original payment method used for the purchase.</p>
+
+    <h2>9. Changes to this Payment Policy:</h2>
+    <p>We reserve the right to modify this Payment Policy at any time without prior notice. Any changes will be effective immediately upon posting on our Website. We encourage you to review this Payment Policy periodically for any updates.</p>
+
+    <div class="contact-info">
+        <h2>10. Contact Us:</h2>
+        <p>If you have any questions or concerns regarding our Payment Policy, please contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="loftylofty49@gmail.com">loftylfoty49@ggmail.com</a></li>
+            <li><strong>Phone:</strong> +256 757847529</li>
+            <li><strong>Address:</strong>  Campus office building at Makerere University Jinja Campus P.O. Box 5249, Jinja Tel:+256 757 847 529</li>
+        </ul>
+    </div>
+</div> 
+    <footer class="tm-black-bg">
+        <div class="container">
+          <div class="ft-cont">
+            <div class="ft-item1">
+              <h3>HELP</h3>
+  
+              <ul>
+                <li><a href="paymentpolicy.html" class="active">Payments</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="cancellation.html">Cancellation & Return</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="ft-item1">
+              <h3>PRODUCT</h3>
+  
+              <ul>
+                <li>
+                  <a href="campus.html#computersmain" class="active">Desktops</a>
+                </li>
+                <li><a href="campus.html#gadgetsmain">Gadgets</a></li>
+                <li><a href="campus.html#storagesmain" target="_top">Storage</a></li>
+                <li><a href="campus.html#printersmain">Printers</a></li>
+              </ul>
+            </div>
+            <div class="ft-item1">
+              <h3>ABOUT US</h3>
+  
+              <ul>
+                <li><a href="contact.html#contactus1" class="active">Reach out</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campus.html">Careers</a></li>
+                <li><a href="contact.html">Corporate</a></li>
+              </ul>
+            </div>
+  
+            <div class="ft-item2">
+              <div class="slider-social">
+                <h3>Socials</h3>
+                <a href=" https://x.com/lofty73687?t=ZzK2QDtkGKr57-GnXtMHoA&s=08" class="tm-social-icon"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="loftylofty49@gmail.com" class="tm-social-icon"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+                <a href="https://www.instagram.com/256lofty?igsh=MThuNzFhMzhqazFxbg==" class="tm-social-icon"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="https://pin.it/6HPCtAGYM" class="tm-social-icon"
+                  ><i class="fa fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="tm-copyright-text">
+            All Rights Reserved Copyright &copy; 2025 LoFTY House of Technology
+          </p>
+        </div>
+      </footer>
+<script>
+
+  // --- Search Bar Interaction ---
+const searchInput = $('#productSearchInput');
+      const searchResultsContainer = $('#searchResults');
+
+      // --- Define your searchable items and their target IDs on campus.html ---
+      // (Expand this list with more specific product names and keywords)
+      const searchableItems = [
+        { name: "Desktops", targetId: "computersmain" },
+        { name: "Computers", targetId: "computersmain" },
+        { name: "MacBook Desktop", targetId: "computersmain" },
+        { name: "Dell Desktop", targetId: "computersmain" },
+        { name: "Samsung Desktop", targetId: "computersmain" },
+        { name: "Laptops", targetId: "laptopsmain" },
+        { name: "Asus Zenbook", targetId: "laptopsmain" },
+        { name: "MacBook Laptop", targetId: "laptopsmain" },
+        { name: "Dell Laptop", targetId: "laptopsmain" },
+        { name: "Samsung Laptop", targetId: "laptopsmain" },
+        { name: "Storage", targetId: "storagesmain" },
+        { name: "Hard Disk Drive (HDD)", targetId: "storagesmain" },
+        { name: "Solid State Drive (SSD)", targetId: "storagesmain" },
+        { name: "RAM", targetId: "storagesmain" },
+        { name: "Memory Card", targetId: "storagesmain" },
+        { name: "Flash Disk", targetId: "storagesmain" },
+        { name: "Gadgets", targetId: "gadgetsmain" },
+        { name: "Keyboard", targetId: "gadgetsmain" },
+        { name: "Mouse", targetId: "gadgetsmain" },
+        { name: "Speaker", targetId: "gadgetsmain" },
+        { name: "Webcam", targetId: "gadgetsmain" },
+        { name: "Smart Watch", targetId: "gadgetsmain" },
+        { name: "Printers", targetId: "printersmain" },
+        { name: "Epson Printer", targetId: "printersmain" },
+        { name: "HP Printer", targetId: "printersmain" },
+        { name: "Chargers", targetId: "chargersmain" },
+        { name: "Laptop Charger", targetId: "chargersmain" },
+        { name: "Phone Charger", targetId: "chargersmain" },
+        { name: "Cables", targetId: "chargersmain" }, // Grouping cables under chargers section
+        { name: "USB Cable", targetId: "chargersmain" },
+        { name: "Network Cable", targetId: "chargersmain" },
+        { name: "SATA Cable", targetId: "chargersmain" },
+        { name: "Adapters", targetId: "chargersmain" },
+        // Add more items based on your product list in campus.html
+      ];
+
+      // --- Function to perform redirect ---
+      function redirectToSection(itemId) {
+          if (itemId) {
+              const targetUrl = 'campus.html#' + itemId;
+              alert("Redirecting to:", targetUrl);
+              window.location.href = targetUrl; // Navigate to the section
+          } else {
+            alert("No target ID found for redirection.");
+              // Optional: redirect to general campus page or show error
+              alert("Could not find the specific product section.");
+              // window.location.href = 'campus.html';
+          }
+      }
+
+      // --- Show suggestions on input ---
+      searchInput.on('input', function() {
+        const query = $(this).val().trim().toLowerCase();
+        searchResultsContainer.empty().hide(); // Clear previous results and hide
+
+        if (query.length < 1) { // Don't search if input is empty
+          return;
+        }
+
+        // Filter items where the name includes the query
+        const filteredItems = searchableItems.filter(item =>
+          item.name.toLowerCase().includes(query)
+        );
+
+        if (filteredItems.length > 0) {
+          filteredItems.forEach(item => {
+            // Create a div for each result
+            // Store the targetId in a data attribute for later retrieval
+            const itemElement = $('<div class="search-result-item"></div>')
+                                  .text(item.name)
+                                  .data('targetId', item.targetId); // Store the ID here
+            searchResultsContainer.append(itemElement);
+          });
+          searchResultsContainer.show(); // Show the container with results
+        }
+      });
+
+      // --- Handle suggestion click ---
+      // Use event delegation since items are added dynamically
+      searchResultsContainer.on('click', '.search-result-item', function() {
+        const selectedName = $(this).text();
+        const targetId = $(this).data('targetId'); // Retrieve the stored ID
+
+        searchInput.val(selectedName); // Put selected name into the search input
+        searchResultsContainer.empty().hide(); // Hide the suggestions list
+
+        console.log("Suggestion clicked:", selectedName, "Target ID:", targetId);
+        redirectToSection(targetId); // Redirect using the retrieved ID
+      });
+
+      // --- Hide suggestions when clicking outside the search area ---
+      $(document).on('click', function(event) {
+        // Hide if the click is NOT on the search input OR the results container itself
+        if (!$(event.target).closest('#productSearchInput, #searchResults').length) {
+          searchResultsContainer.empty().hide();
+        }
+      });
+
+       // --- Hide suggestions on input blur (losing focus) ---
+       // Use a small delay to allow click on suggestion to register first
+       searchInput.on('blur', function() {
+           setTimeout(() => {
+               // Check if the mouse is currently over the results list
+               if (!searchResultsContainer.is(':hover')) {
+                   searchResultsContainer.empty().hide();
+               }
+           }, 150); // 150ms delay
+       });
+
+
+      // --- Handle form submission (pressing Enter or clicking Search button) ---
+      $('.search-form').on('submit', function(event) {
+        event.preventDefault(); // Stop default form submission
+
+        const searchTerm = searchInput.val().trim().toLowerCase();
+        searchResultsContainer.empty().hide(); // Hide suggestions on submit
+
+        if (searchTerm) {
+          console.log("Form submitted with:", searchTerm);
+
+          // Prioritize finding an exact match (case-insensitive)
+          const exactMatch = searchableItems.find(item =>
+            item.name.toLowerCase() === searchTerm
+          );
+
+          if (exactMatch) {
+            // Found an exact match, redirect to its section
+            redirectToSection(exactMatch.targetId);
+          } else {
+            // No exact match, try finding the first partial match
+            const partialMatch = searchableItems.find(item =>
+              item.name.toLowerCase().includes(searchTerm)
+            );
+            if (partialMatch) {
+                 console.log("No exact match, using first partial match:", partialMatch.name);
+                 redirectToSection(partialMatch.targetId);
+            } else {
+                // No match at all, redirect to general campus page or show message
+                console.log("No specific category match found for:", searchTerm);
+                alert("Could not find a specific category for '" + searchTerm + "'. Showing all products.");
+                window.location.href = 'campus.html'; // Fallback to the general shop page
+            }
+          }
+        } else {
+          console.log("Search term is empty.");
+          searchInput.focus(); // Put focus back on the input if empty
+        }
+      });
+      // --- End Search Bar Interaction ---
+</script>
+</body>
+</html>

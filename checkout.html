@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+    <!-- Add your payment gateway script here -->
+   
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+        <link href="css/flexslider.css" rel="stylesheet" />
+        <link href="css/main-style.css" rel="stylesheet" />
+      
+    <script src="https://js.yourpaymentgateway.co.za/sdk/latest.js"></script>
+    
+    <link href="css/cart.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="tm-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+              <a href="#" class="tm-site-name"
+                ><img src="img/loftylogo.png" class="logo"
+              ></a>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-9">
+              <div class="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+              </div>
+              <nav class="tm-nav">
+                <ul>
+                  <li>
+                    <a href="index.html" class="active"
+                      ><i class="fa-solid fa-house-user"></i> Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html"
+                      ><i class="fa-solid fa-user"></i> About Lofty</a
+                    >
+                  </li>
+                  <li>   
+                    <a href="campus.html">
+                      <i class="fa-solid fa-file-invoice"></i> Shop  
+                    </a>
+                    
+                  </li>
+                 
+                  <li>
+                    <a href="contact.html"
+                      ><i class="fa-solid fa-headset"></i> Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a href="cart.html"
+                      ><i class="fa-solid fa-cart-shopping"></i>Cart<div class="cart-quantity">0</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="payment-container">
+        <h2>Payment Method</h2>
+
+        <div id="mobile-payment-buttons">
+        </div>
+        <div id="payment-errors" style="color: red;"></div>
+
+        <!-- Card Payment Form -->
+        <form id="card-payment-form">
+            <h3>Pay with Card</h3>
+            <div>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" data-yourgateway="card-number">
+            </div>
+            <div>
+                <label for="expiry-month">Expiry Month:</label>
+                <input type="text" id="expiry-month" name="expiry-month" data-yourgateway="expiry-month">
+            </div>
+            <div>
+                <label for="expiry-year">Expiry Year:</label>
+                <input type="text" id="expiry-year" name="expiry-year" data-yourgateway="expiry-year">
+            </div>
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" data-yourgateway="cvv">
+            </div>
+            <button type="submit" id="card-pay-button">Pay Now with Card</button>
+            <h1>Pay with Paystack</h1>
+    <button type="button" id="paystack-button">Pay Now</button>
+        </form>
+       </div>
+
+       <footer class="tm-black-bg">
+        <div class="container">
+          <div class="ft-cont">
+            <div class="ft-item1">
+              <h3>HELP</h3>
+  
+              <ul>
+                <li><a href="index.html" class="active">Payments</a></li>
+                <li><a href="about.html">Shipping</a></li>
+                <li><a href="campus.html">Cancellation & Return</a></li>
+                <li><a href="contact.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="ft-item1">
+              <h3>PRODUCT</h3>
+  
+              <ul>
+                <li>
+                  <a href="campus.html#computersmain" class="active">Desktops</a>
+                </li>
+                <li><a href="campus.html#gadgetsmain">Gadgets</a></li>
+                <li><a href="campus.html#storagesmain" target="_top">Storage</a></li>
+                <li><a href="campus.html#printersmain">Printers</a></li>
+              </ul>
+            </div>
+            <div class="ft-item1">
+              <h3>ABOUT US</h3>
+  
+              <ul>
+                <li><a href="contact.html#contactus1" class="active">Reach out</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="campus.html">Careers</a></li>
+                <li><a href="contact.html">Corporate</a></li>
+              </ul>
+            </div>
+  
+            <div class="ft-item2">
+              <div class="slider-social">
+                <h3>Socials</h3>
+                <a href="#" class="tm-social-icon"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="#" class="tm-social-icon"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="#" class="tm-social-icon"
+                  ><i class="fa fa-pinterest"></i
+                ></a>
+                <a href="#" class="tm-social-icon"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="tm-copyright-text">
+            All Rights Reserved Copyright &copy; 2025 LoFTY House of Technology
+          </p>
+        </div>
+      </footer>
+      <script src="https://js.paystack.co/v2/inline.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardPaymentForm = document.getElementById('card-payment-form');
+            const cardPayButton = document.getElementById('card-pay-button');
+            const paymentErrors = document.getElementById('payment-errors');
+            const mobilePaymentButtons = document.getElementById('mobile-payment-buttons');
+
+           const gateway = YourPaymentGatewaySDK.initialize({
+                publicKey: 'YOUR_PUBLIC_KEY' 
+            });
+
+         //   payment method for mobile
+          gateway.configure({
+                    paymentMethods: ['googlepay', 'applepay']
+                }).then(function(result) {
+                    if (result.error) {
+                        console.error('Error configuring mobile payment methods:', result.error.message);
+                        paymentErrors.textContent = result.error.message;
+                    } else {
+                     result.paymentMethods.forEach(paymentMethod => {
+                         const button = document.createElement('button');
+                            button.textContent = `Pay with ${paymentMethod.name}`;
+                            button.id = paymentMethod.name;
+                           mobilePaymentButtons.appendChild(button);
+                         button.addEventListener('click', () => {
+                             // Create a payment token for the selected payment method
+                            gateway.createToken({paymentMethod: paymentMethod.name})
+                                .then(function(result) {
+                                    if (result.error) {
+                                      paymentErrors.textContent = result.error.message;
+                                    } else {
+                                       // Send the token to your server to process the payment
+                                       fetch('/process-payment', {
+                                          method: 'POST',
+                                           headers: {
+                                             'Content-Type': 'application/json'
+                                           },
+                                          body: JSON.stringify({ token: result.token, paymentMethod: paymentMethod.name })
+                                        })
+                                        .then(response => response.json())
+                                        .then(data => {
+                                              if (data.success) {
+                                                    window.location.href = '/payment-success';
+                                              } else {
+                                                    paymentErrors.textContent = data.error;
+                                             }
+                                         });
+                                   }
+                               });
+                         })
+                     });
+                    }
+                });
+
+          // payment method for card
+          cardPaymentForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                gateway.createToken(cardPaymentForm)
+                    .then(function(result) {
+                        if (result.error) {
+                            paymentErrors.textContent = result.error.message;
+                        } else {
+                            // Send the token to your server to process the payment
+                            fetch('/process-payment', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({ token: result.token })
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.success) {
+                                    window.location.href = '/payment-success';
+                                } else {
+                                    paymentErrors.textContent = data.error;
+                                }
+                            });
+                        }
+                    });
+            });
+        });
+
+        document.getElementById('paystack-button').addEventListener('click', function() {
+        const handler = PaystackPop.setup({
+            key: 'YOUR_PAYSTACK_PUBLIC_KEY', // Replace with your public key
+            email: 'user@example.com', // Replace with the customer's email
+            amount: 50000, // Amount in kobo (e.g., 50000 = 500.00)
+            currency: 'KES', // Replace with the appropriate currency
+            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            metadata: {
+                custom_fields: [
+                    {
+                        display_name: "Mobile Number",
+                        variable_name: "mobile_number",
+                        value: "+254700000000"
+                    }
+                ]
+            },
+            callback: function(response) {
+                // This is called only when the customer completes the payment.
+                const reference = response.reference;
+                // send data to your server with reference
+                alert('Payment complete! Reference: ' + reference);
+            },
+            onClose: function() {
+              // This happens when the user closes the payment dialog.
+              alert('window closed');
+            }
+        });
+        handler.openIframe();
+    });
+
+    
+        const paymentButton = document.getElementById('paystack-button');
+
+        paymentButton.addEventListener('click', function() {
+            const handler = PaystackPop.setup({
+                key: 'YOUR_PAYSTACK_PUBLIC_KEY', // Replace with your public key
+                email: 'user@example.com', // Replace with the customer's email (or fetch it dynamically)
+                amount: 25000, // Amount in the smallest currency unit (e.g., 25000 = 250.00 in KES)
+                currency: 'KES', // The currency code (e.g., KES, NGN, GHS)
+                ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+                metadata: {
+                    custom_fields: [
+                        {
+                            display_name: "Mobile Number",
+                            variable_name: "mobile_number",
+                            value: "+254700000000"
+                        }
+                    ]
+                },
+                callback: function(response) {
+                    // This is called only when the customer completes the payment.
+                    const reference = response.reference;
+                    // Send data to your server with reference
+                   
+                    alert('Payment complete! Reference: ' + reference);
+                      // Now, you would typically send the reference to your server for verification
+                     fetch('/verify-payment', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ reference: reference }),
+                      })
+                      .then(response => response.json())
+                      .then(data => {
+                        if (data.success) {
+                           alert('Payment verified successfully!');
+                          // Redirect to a success page or update the UI accordingly
+                          window.location.href = '/payment-success';
+                        } else {
+                           alert('Payment verification failed!');
+                           window.location.href = '/payment-failed';
+                          // Handle the failed payment scenario
+                        }
+                      })
+                      .catch(error => {
+                          alert('Error verifying payment!');
+                          // Handle any network or other errors
+                       });
+                },
+                onClose: function() {
+                  // This happens when the user closes the payment dialog.
+                  alert('window closed');
+                }
+            });
+            handler.openIframe();
+        });
+    </script>
+    </script>
+</body>
+</html>

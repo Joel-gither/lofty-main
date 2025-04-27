@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lofty - Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/main-style.css" rel="stylesheet" />
+    <style>
+      /* Basic styling for the signup form */
+      .popup {
+        display: block !important;
+      }
+      .switch-form {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="tm-gray-bg">
+    <a href="index.html">Go back to main page</a>
+    <div class="popup" id="poplogin">
+      <span class="closelogin">X</span>
+      <h1 class="signup">Sign Up</h1>
+      <form id="signupForm" method="POST" action="form.php">
+        <input
+          type="text"
+          placeholder="User Name"
+          name="newUsername"
+          class="inp"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          name="newEmail"
+          class="inp"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="newPassword"
+          class="inp"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          name="confirmPassword"
+          class="inp"
+          required
+        />
+        <button type="submit" name="submit" value="send" class="lgbtn">Sign Up</button>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("signupForm")
+          .addEventListener("submit", function (event) {
+            const newUsername = document.querySelector(
+              'input[name="newUsername"]'
+            ).value;
+            const newEmail = document.querySelector(
+              'input[name="newEmail"]'
+            ).value;
+            const newPassword = document.querySelector(
+              'input[name="newPassword"]'
+            ).value;
+            const confirmPassword = document.querySelector(
+              'input[name="confirmPassword"]'
+            ).value;
+
+            if (
+              newUsername.trim() === "" ||
+              newEmail.trim() === "" ||
+              newPassword.trim() === "" ||
+              confirmPassword.trim() === ""
+            ) {
+              alert("Please fill in all fields.");
+              event.preventDefault(); // Prevent form submission
+            } else if (newPassword !== confirmPassword) {
+              alert("Passwords do not match.");
+              event.preventDefault(); // Prevent form submission
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
